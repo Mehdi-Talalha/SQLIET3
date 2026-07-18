@@ -28,7 +28,7 @@ group = [
   # ect...
 ]
 
-cursor.execute('INSERT INTO TABLE_NAME (name, email, age) VALUES (?, ?, ?)', group)
+cursor.executemany('INSERT INTO TABLE_NAME (name, email, age) VALUES (?, ?, ?)', group)
 
 
 # Commit changes
